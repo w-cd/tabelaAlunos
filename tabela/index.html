@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p>CADASTRO DE ALUNOS</p>
+    </header>
+
+    <div class="boletim">
+        <h1>Alunos</h1>
+        <hr>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>1°Trimestre</th>
+                    <th>2°Trimestre</th>
+                    <th>3°Trimestre</th>
+                    <th>Média Final</th>
+                    <th>Frequência</th>
+                    <th>Situação</th>
+                </tr>
+            </thead>
+            <tbody id="tabela">
+                <!--PESSOAS SERAM ACRESCENTADAS AQUI-->   
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" id="total_alunos">Total de Alunos:0</td>
+                    <td colspan="3" id="media_turma">Média da turma:0</td>
+                    <td colspan="2" id="freq_turma">Frequência da turma:0%</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!--Formulário de Inserção de Aluno-->
+
+        <h1>Adicionar Aluno</h1>
+        <hr>
+
+        <form action="">
+            <div class="sessao_nome">
+                <label for="name_aluno">Nome:</label>
+                <input type="text" placeholder="Nome do Aluno" id="name_aluno">
+            </div>
+
+            <fieldset>
+                <legend>Notas:</legend>
+                <div>
+                    <label for="notas">1°Trimestre:</label>
+                    <input type="number" min="0" max="100" step="1" value="0" class="notas">
+                </div>
+
+                <div>
+                    <label for="notas">2°Trimestre:</label>
+                    <input type="number" min="0" max="100" step="1" value="0" class="notas">
+                </div>
+
+                <div>
+                    <label for="notas">3°Trimestre:</label>
+                    <input type="number" min="0" max="100" step="1" value="0" class="notas">
+                </div>
+            </fieldset>
+
+            <div class="label_final">
+                <label for="freq" class="insert_freq">Frequência:
+                    <input type="number" min="0" max="100" step="1" value="0" id="freq">%
+                </label>
+            </div>
+            <input type="submit" value="Gravar" id="submit_buttom">
+        </form>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

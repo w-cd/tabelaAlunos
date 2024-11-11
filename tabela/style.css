@@ -1,0 +1,140 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, caption,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: rgb(0, 5, 77);
+    color: white;
+    width: 100%;
+    top: 0;
+    margin: 0;
+}
+
+header p {
+    text-align: center;
+    font-size: 50px;
+    padding: 2% 0 2% 5%;
+}
+
+.boletim {
+    margin: 2%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 4%;
+    margin-left: 1%;
+}
+
+hr {
+    border: 1px solid rgb(4, 4, 7);
+}
+
+table {
+    width: 99%;
+    text-align: center;
+    font-size: 1.7rem;
+    border-spacing: 0;
+}
+
+thead {
+    background-color: rgb(1, 0, 68);
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(0, 13, 71, 0.897);
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: white;    
+    color: rgb(1, 0, 58);
+}
+
+td {
+    border: 1px solid black;
+}
+
+tfoot {
+    background-color: rgb(1, 16, 58);
+    color: white;
+}
+
+/*Estilização do form ADD ALUNO*/
+
+.sessao_nome {
+    font-size: 1.4rem;
+    margin: 2% 0 1% 0;
+}
+
+.sessao_nome > input {
+    width: 35%;
+    font-size: 1.4rem;
+    padding: 5px;
+}
+
+fieldset {
+    border-radius: 10px;
+    display: flex;
+}
+
+fieldset > legend {
+    font-size: 1.6rem;
+}
+
+fieldset > div {
+    margin: 0.5% 2% 0.3% 2%;
+}
+
+fieldset > div > input {
+    width: 30%;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0.4%;
+}
+
+.label_final {
+    font-size: 1.4rem;
+    margin-top: 0.5%;
+}
+
+.label_final  input {
+    width: 5%;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0.4%;
+}
+
+#submit_buttom {
+    width: 8%;
+    font-size: 1.1rem;
+    padding: 0.4%;
+    margin-top: 0.8%;
+    background-color: rgb(54, 52, 52);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
